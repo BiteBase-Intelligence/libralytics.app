@@ -83,21 +83,21 @@
     {
       "key": "nia",
       "value": "NIA",
-      "image": "assets/nia_logo.jpg",
+      "image": "images/logo_nia.jpg",
       "link": "https://www.nia.or.th/",
       "desc": "ได้รับการสนับสนุนจากสำนักงานนวัตกรรมแห่งชาติ"
     },
     {
       "key": "depa",
       "value": "depa",
-      "image": "assets/depa_logo.png",
+      "image": "images/logo_depa.png",
       "link": "https://www.depa.or.th/",
       "desc": "พันธมิตรสำนักงานส่งเสริมเศรษฐกิจดิจิทัล"
     },
     {
       "key": "aieat",
       "value": "AIEAT",
-      "image": "assets/aieat_logo.png",
+      "image": "images/logo_aieat.png",
       "link": "https://aieat.or.th/",
       "desc": "สมาคมผู้ประกอบการปัญญาประดิษฐ์ประเทศไทย"
     }
