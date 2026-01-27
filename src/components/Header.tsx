@@ -11,8 +11,8 @@ import {
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { useTranslation } from 'next-i18next';
 import React, { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Header = () => {
   const { t } = useTranslation('header');

@@ -1,7 +1,7 @@
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
-import { useTranslation } from 'next-i18next';
 import * as React from 'react';
+import { useTranslation } from 'react-i18next';
 
 import ColoredButton from '@/components/Buttons';
 import Footer from '@/components/Footer';

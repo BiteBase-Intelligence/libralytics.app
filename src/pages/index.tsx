@@ -2,8 +2,8 @@ import { Divider, useMediaQuery } from '@mui/material';
 import { motion, useAnimation } from 'framer-motion';
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
-import { useTranslation } from 'next-i18next';
 import * as React from 'react';
+import { useTranslation } from 'react-i18next';
 import { useInView } from 'react-intersection-observer';
 
 import ColoredButton, { UnColoredButton } from '@/components/Buttons';
