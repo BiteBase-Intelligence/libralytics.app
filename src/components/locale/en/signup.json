@@ -2,19 +2,19 @@
   "demos": [
     {
       "key": "demo1",
-      "value": "Submit data inquiries"
+      "value": "Submit precise data inquiries"
     },
     {
       "key": "demo2",
-      "value": "Share API requirements"
+      "value": "Share your API requirements"
     },
     {
       "key": "demo3",
-      "value": "Get custom pricing"
+      "value": "Receive a tailored quote"
     },
     {
       "key": "demo4",
-      "value": "Consult with an expert"
+      "value": "Consult with a data strategist"
     }
   ],
   "topic": "Request Call-Back",
@@ -24,7 +24,7 @@
   "home": "← Back to homepage",
   "submit": "Submit →",
   "submitting": "Submitting...",
-  "postSubmit": "Thank you for your interest in Libralytics. We will be in touch shortly.",
+  "postSubmit": "Thank you for choosing Libralytics. Our team is reviewing your request and will contact you shortly to discuss your data strategy.",
   "explore": "In the meantime, you can explore our offerings.",
   "sampleData": "Sample Data"
 }

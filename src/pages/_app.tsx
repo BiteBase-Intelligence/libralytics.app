@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     TagManager.initialize(tagManagerArgs);
   }, []);
 
-  const { locale, defaultLocale } = useRouter();
+  const { locale, defaultLocale } = useRouter() as any;
 
   useEffect(() => {
     i18n.changeLanguage(locale || defaultLocale || 'en');

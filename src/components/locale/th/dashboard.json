@@ -48,7 +48,16 @@
     "record": "Recorded count:",
     "recordDetails": "2,000,000+",
     "history": "Historical Data:",
-    "historyDetails": "2023"
+    "historyDetails": "2023",
+    "schema": [
+      "Store Name",
+      "Cuisine Category",
+      "Rating",
+      "Review Count",
+      "Delivery Time",
+      "Promotions",
+      "Geo Coordinates"
+    ]
   },
   "shopeefood": {
     "name": "shopeefood",
@@ -63,7 +72,16 @@
     "record": "Recorded count:",
     "recordDetails": "1,500,000+",
     "history": "Historical Data:",
-    "historyDetails": "2023"
+    "historyDetails": "2023",
+    "schema": [
+      "Merchant Name",
+      "Food Type",
+      "Star Rating",
+      "Order Count",
+      "Voucher Info",
+      "Delivery Fee",
+      "Latitude/Longitude"
+    ]
   },
   "lineman": {
     "name": "lineman",
@@ -78,7 +96,15 @@
     "record": "Recorded count:",
     "recordDetails": "1,000,000+",
     "history": "Historical Data:",
-    "historyDetails": "2023"
+    "historyDetails": "2023",
+    "schema": [
+      "Restaurant Name",
+      "Open Status",
+      "User Reviews",
+      "Delivery Radius",
+      "Price Range",
+      "Location Detail"
+    ]
   },
   "wownow": {
     "name": "wownow",
@@ -93,7 +119,15 @@
     "record": "Recorded count:",
     "recordDetails": "1,000,000+",
     "history": "Historical Data:",
-    "historyDetails": "2023"
+    "historyDetails": "2023",
+    "schema": [
+      "Shop Name",
+      "Product Category",
+      "Discount Rate",
+      "Sales Volume",
+      "Delivery Estimation",
+      "City/Province"
+    ]
   },
   "foodpanda": {
     "name": "foodpanda",
@@ -108,6 +142,15 @@
     "record": "Recorded count:",
     "recordDetails": "1,000,000+",
     "history": "Historical Data:",
-    "historyDetails": "2023"
+    "historyDetails": "2023",
+    "schema": [
+      "Brand Name",
+      "Premium Partner",
+      "Min. Order Value",
+      "Customer Rating",
+      "Delivery Cost",
+      "Payment Methods",
+      "Geo Location"
+    ]
   }
 }

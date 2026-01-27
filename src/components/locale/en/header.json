@@ -1,9 +1,12 @@
 {
   "headerLinks": [
-    { "key": "Datasets", "value": "Datasets", "href": "/datasets" },
-    { "key": "Data APIs", "value": "Data APIs", "href": "/contact" },
-    { "key": "Pricing", "value": "Pricing", "href": "/contact" }
+    { "key": "Solutions", "value": "Solutions", "href": "/solutions" },
+    { "key": "Industries", "value": "Industries", "href": "/industries" },
+    { "key": "Technology", "value": "Technology", "href": "/technology" },
+    { "key": "Coverage", "value": "Coverage", "href": "/coverage" },
+    { "key": "Insights", "value": "Insights", "href": "/insights" },
+    { "key": "About", "value": "About", "href": "/about" }
   ],
   "callToAction1": "Contact Sales",
-  "callToAction2": "Sign Up"
+  "callToAction2": "Request Demo"
 }

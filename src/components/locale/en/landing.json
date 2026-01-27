@@ -1,130 +1,134 @@
 {
-  "comingsoon": "Coming Soon",
-  "landingHeader": "Fresh restaurant & delivery intelligence data",
-  "landingSubHeader": "Enhance your investment plans or make data-driven decisions with Libralytics' always fresh raw data of 100,000+ restaurants and delivery riders from all over Asia-Pacific.",
+  "landingHeader": "AI & Data Infrastructure for Modern Enterprises",
+  "landingSubHeader": "Turn fragmented data into intelligent decisions with enterprise-grade Agentic AI. We provide the robust infrastructure needed for high-precision lead generation, deep market intelligence, and fully autonomous operational workflows—designed to scale with your business.",
   "landingButton1": "Contact Sales",
-  "landingButton2": "Browse Data",
+  "landingButton2": "Request Demo",
   "landingHighlights": [
-    { "key": "records", "number": "284M", "value": "records monthly" },
-    { "key": "restaurants", "number": "300K", "value": "restaurants profiles" },
-    { "key": "company", "number": "9", "value": "companies tracked" },
-    { "key": "sources", "number": "10", "value": "data sources" }
+    { "key": "1", "number": "10M+", "value": "Data Points Processed" },
+    { "key": "2", "number": "10+", "value": "APEC Markets Covered" },
+    { "key": "3", "number": "99.9%", "value": "Uptime Reliability" },
+    { "key": "4", "number": "24/7", "value": "AI Agent Support" }
   ],
-  "dataHeader": "Structured data in SQL or CSV",
-  "dataSubHeader": "With Libralytics, get raw datasets collected from business-related public online platforms. With a convenient choice of either parsed JSON or CSV, we will transfer the data via a web link or send the files directly to your preferred storage.",
+  "dataHeader": "Core Solutions",
+  "dataSubHeader": "Empowering your business with cutting-edge technology.",
   "dataQualities": [
     {
-      "image": "assets/images/fresh.svg",
-      "header": "Always fresh data",
-      "body": "Every month we update 158M high-value data points so you can always stay ahead of the competition."
+      "header": "Lead Generation AI",
+      "body": "Identify and capture high-intent enterprise leads automatically using our precision-engineered AI models, designed to reduce acquisition costs and improve conversion rates.",
+      "image": "images/feature1.svg"
     },
     {
-      "image": "assets/images/history.svg",
-      "header": "Historical data",
-      "body": "With up to 30 months' worth of data development and scraping algorithms, our datasets can be confidently used to build models, forecast trends, assess competition."
+      "header": "Market Intelligence",
+      "body": "Gain a competitive edge with real-time, granular insights across APEC markets. Monitor trends, pricing, and consumer sentiment to drive data-backed strategic decisions.",
+      "image": "images/feature2.svg"
     },
     {
-      "image": "assets/images/api.svg",
-      "header": "API Solutions",
-      "body": "Use Restaurant API, Rider API, and Weather API to access, filter and query our main datasets directly or request for on-demand scraping based on your needs."
+      "header": "Agentic AI Crew",
+      "body": "Deploy specialized autonomous AI agents to handle complex operational workflows, from marketing automation to customer support, functioning as a tireless digital workforce.",
+      "image": "images/feature3.svg"
+    },
+    {
+      "header": "Data Infrastructure",
+      "body": "Build on a foundation of robust pipelines and secure Data Lakehouse architecture, ensuring full data sovereignty, scalability, and compliance for your enterprise.",
+      "image": "images/feature4.svg"
     }
   ],
-  "dataUseCaseHeader": "How our data is used",
-  "dataUseCaseSubHeader": "From startups to Fortune 500 companies, our business data is leveraged for a multitude of cases.",
+  "dataUseCaseHeader": "Industry Use Cases",
+  "dataUseCaseSubHeader": "See how Libralytic transforms industries.",
   "dataUseCases": [
     {
-      "key": "Investment Intelligence",
-      "value": "Investment Intelligence",
-      "image": "assets/images/1_investment_intelligence.svg"
+      "key": "food",
+      "value": "Food & Restaurant (BiteBase)",
+      "image": "images/usecase1.svg"
     },
     {
-      "key": "Datadriven Recruitment",
-      "value": "Data-driven Recruitment",
-      "image": "assets/images/2_data_driven_recruitment.svg"
+      "key": "retail",
+      "value": "Retail & E-commerce",
+      "image": "images/usecase2.svg"
     },
     {
-      "key": "Lead Generation",
-      "value": "Lead Generation",
-      "image": "assets/images/3_lead_generation.svg"
+      "key": "property",
+      "value": "Property & Investment",
+      "image": "images/usecase3.svg"
     },
     {
-      "key": "Data Enrichment",
-      "value": "Data Enrichment",
-      "image": "assets/images/4_data_enrichment.svg"
-    },
-    {
-      "key": "Trend Forecasting",
-      "value": "Trend Forecasting",
-      "image": "assets/images/5_trend_forecasting.svg"
-    },
-    {
-      "key": "Custom",
-      "value": "Custom",
-      "image": "assets/images/6_feature.svg"
+      "key": "finance",
+      "value": "Finance & Procurement",
+      "image": "images/usecase4.svg"
     }
   ],
-  "dataUseCaseDetailButton": "Learn more",
-  "partnerHeader": "We are proud to work with",
+  "partnerHeader": "Our Partners & Coverage",
   "partners": [
     {
-      "key": "kitechat",
-      "value": "kitechat",
-      "image": "assets/images/kitechat.webp",
-      "link": "https://kite.chat"
+      "key": "aibot",
+      "value": "AI BOT",
+      "image": "images/logo_aibot_v2.png",
+      "link": "https://ai-bot.co.jp/",
+      "desc": "Joint R&D and Market Expansion in Japan"
     },
     {
-      "key": "legion",
-      "value": "legion",
-      "image": "assets/images/legion.webp",
-      "link": "https://t.me/LegionTradingSignal_Free"
+      "key": "wondermove",
+      "value": "Wondermove",
+      "image": "images/logo_wondermove.png",
+      "link": "https://skuber.wondermove.net/Skuber",
+      "desc": "Enhancing mobility data intelligence"
     },
     {
-      "key": "savi",
-      "value": "savi",
-      "image": "assets/images/savi.webp",
-      "link": "https://savibm.com"
+      "key": "thaikanya",
+      "value": "ThaiKanya",
+      "image": "images/logo_thaikanya.png",
+      "link": "https://www.thaikanya.com/",
+      "desc": "Empowering precision agriculture with data"
+    },
+    {
+      "key": "nia",
+      "value": "NIA",
+      "image": "assets/nia_logo.jpg",
+      "link": "https://www.nia.or.th/",
+      "desc": "Supported by National Innovation Agency"
+    },
+    {
+      "key": "depa",
+      "value": "depa",
+      "image": "assets/depa_logo.png",
+      "link": "https://www.depa.or.th/",
+      "desc": "Digital Economy Promotion Agency Partner"
+    },
+    {
+      "key": "aieat",
+      "value": "AIEAT",
+      "image": "assets/aieat_logo.png",
+      "link": "https://aieat.or.th/",
+      "desc": "AI Entrepreneur Association of Thailand"
     }
   ],
-  "stepsHeader": "We like to keep it simple",
+  "stepsHeader": "How It Works",
   "steps": [
     {
-      "key": "Requirement",
-      "number": "1",
-      "header": "Tell us what you need",
-      "body": "First, we discuss your specific needs. Optionally, we can offer a sample dataset. Then, you can either request the full dataset or data specific to selected countries and regions."
+      "key": "step1",
+      "number": "01",
+      "header": "Connect Data",
+      "body": "Seamlessly integrate your existing data silos or leverage our extensive market data APIs to build a unified foundation for intelligence."
     },
     {
-      "key": "Delivery",
-      "number": "2",
-      "header": "Get the requested data",
-      "body": "The requested data is then uploaded in CSV or JSON formats as a weblink or a file, directly to your preferred data storage."
+      "key": "step2",
+      "number": "02",
+      "header": "Deploy Agents",
+      "body": "Configure purpose-built AI agents to monitor specific metrics, analyze patterns, and execute predefined actions based on your business logic."
     },
     {
-      "key": "Updates",
-      "number": "3",
-      "header": "Keep it fresh",
-      "body": "Outdated data loses relevance. With Libralytics, get daily, monthly or quarterly data updates."
+      "key": "step3",
+      "number": "03",
+      "header": "Drive Growth",
+      "body": "Receive actionable, evidence-based insights and higher-quality leads delivered directly to your CRM or dashboard, empowering faster execution."
     }
   ],
-  "salesHeader": "Not up for a sales call?",
-  "salesSubHeader": "Sign up and get access to our interactive data catalog:",
+  "salesHeader": "Ready to Transform?",
+  "salesSubHeader": "Join the AI-first enterprises leveraging Libralytic.",
   "demos": [
-    {
-      "key": "demo1",
-      "value": "View and download data samples"
-    },
-    {
-      "key": "demo2",
-      "value": "Browse complete data dictionaries"
-    },
-    {
-      "key": "demo3",
-      "value": "Calculate custom data prices"
-    },
-    {
-      "key": "demo4",
-      "value": "Submit data inquiries"
-    }
+    { "key": "1", "value": "Customizable Dashboards" },
+    { "key": "2", "value": "API-First Integration" },
+    { "key": "3", "value": "Enterprise-Grade Security" }
   ],
-  "salesButton": "Start Now"
+  "salesButton": "Get Started Now"
 }

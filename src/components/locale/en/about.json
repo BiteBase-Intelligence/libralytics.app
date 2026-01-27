@@ -1,0 +1,37 @@
+{
+  "title": "About Us",
+  "nameOriginTitle": "Our Name Origin",
+  "nameOriginSubtitle1": "Library + Analytics = Libralytics",
+  "nameOriginSubtitle2": "Your analytics library.",
+  "nameOriginDesc": "Just as a library represents a structured, accessible collection of human knowledge, Libralytics provides the curated infrastructure for your enterprise data—transforming raw information into a cohesive, intelligent decisional fabric empowered by Agentic AI.",
+  "missionTitle": "Mission",
+  "missionDesc": "To democratize elite-level AI infrastructure, enabling organizations to turn fragmented data into decisive competitive advantages.",
+  "visionTitle": "Vision",
+  "visionDesc": "To become the premier AI & Data Infrastructure backbone for forward-thinking enterprises across the APEC region.",
+  "leadershipTitle": "Leadership Team",
+  "leadershipDesc": "Driven by data and innovation experts.",
+  "team": [
+    {
+      "name": "Em Sakkarananthakorn Wijnants",
+      "role": "Founder & CEO",
+      "image": "/assets/em_profile.jpg",
+      "position": "center",
+      "linkedin": "https://th.linkedin.com/in/sakkarananthakorn-wijnants-964203186?",
+      "desc": "Background in data-driven marketing and using data to optimize organizational performance."
+    },
+    {
+      "name": "Nattawut Chainilphan",
+      "role": "CBO",
+      "image": "/assets/nattawut_profile.jpg",
+      "position": "center",
+      "desc": "Experience as a country-level head and startup consultant, successfully expanded the market nationally."
+    },
+    {
+      "name": "Angelina Wijnants",
+      "role": "CFO & HR",
+      "image": "/assets/angelina_profile.jpg",
+      "position": "right",
+      "desc": "Experience as Head of Strategy and Project Implementation at True Ascend, managed and maintained brand continuity online and offline."
+    }
+  ]
+}

@@ -1,9 +1,12 @@
 {
   "headerLinks": [
-    { "key": "Datasets", "value": "ชุดข้อมูล", "href": "/datasets" },
-    { "key": "Data APIs", "value": "API ข้อมูล", "href": "/contact" },
-    { "key": "Pricing", "value": "ราคา", "href": "/contact" }
+    { "key": "Solutions", "value": "โซลูชั่น", "href": "/solutions" },
+    { "key": "Industries", "value": "อุตสาหกรรม", "href": "/industries" },
+    { "key": "Technology", "value": "เทคโนโลยี", "href": "/technology" },
+    { "key": "Coverage", "value": "พื้นที่ให้บริการ", "href": "/coverage" },
+    { "key": "Insights", "value": "ข้อมูลเชิงลึก", "href": "/insights" },
+    { "key": "About", "value": "เกี่ยวกับเรา", "href": "/about" }
   ],
   "callToAction1": "ติดต่อฝ่ายขาย",
-  "callToAction2": "ลงชื่อ"
+  "callToAction2": "ขอสาธิต"
 }

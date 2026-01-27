@@ -17,6 +17,7 @@ const InfoCard = ({ companyDetails }: any) => {
     recordDetails,
     history,
     historyDetails,
+    schema,
   } = companyDetails;
   return (
     <div
@@ -29,6 +30,18 @@ const InfoCard = ({ companyDetails }: any) => {
       <div className="col-span-5 flex h-full w-full flex-col items-start p-2 lg:col-span-7">
         <h2 className="text-primary text-2xl font-bold">{title}</h2>
         <p className="text-primary text-base">{description}</p>
+        {schema && (
+          <div className="mt-4 flex flex-wrap gap-2">
+            {schema.map((tag: string, index: number) => (
+              <span
+                key={index}
+                className="rounded-md border border-slate-200 bg-slate-100 px-2.5 py-1 text-xs font-semibold text-slate-600"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+        )}
       </div>
       <div className="col-span-5 flex w-full flex-col bg-blue-100 p-4 text-xs lg:col-span-4">
         <div className="flex flex-row py-2">

@@ -14,8 +14,6 @@ import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 import React, { useEffect, useState } from 'react';
 
-import Constants from './Constants';
-
 const Header = () => {
   const { t } = useTranslation('header');
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
@@ -30,7 +28,7 @@ const Header = () => {
     setAnchorElNav(null);
   };
 
-  const router = useRouter();
+  const router = useRouter() as any;
 
   React.useEffect(() => {
     const handleRouteChangeComplete = () => {
@@ -75,9 +73,18 @@ const Header = () => {
         <div className="flex w-full justify-start py-3 sm:w-fit sm:shrink-0 sm:justify-between">
           <Link
             href="/"
-            className="text-primary rounded-lg text-xl font-bold tracking-tight focus:outline-none sm:text-3xl"
+            className="flex items-center gap-3 rounded-lg focus:outline-none"
           >
-            {Constants.name}
+            <div className="relative h-10 w-10">
+              <img
+                src="/assets/logo_minimal.jpg"
+                alt="Libralytic Logo"
+                className="h-full w-full object-contain"
+              />
+            </div>
+            <span className="text-2xl font-bold tracking-tight text-gray-900">
+              Libralytic
+            </span>
           </Link>
         </div>
         <div className="hidden grow items-center justify-center lg:block">
@@ -118,7 +125,7 @@ const Header = () => {
               </button>
               <li className="px-2">
                 <Link
-                  // href="mailto:admin@libralytics.app?subject=Request%20Details&amp;body=Hi,%0A%0AI%20am%20interested%20in%20your%20services.%0A%0APlease%20share%20more%20details.%0A%0AThanks"
+                  // href="mailto:libralytics.ext@gmail.com?subject=Request%20Details&amp;body=Hi,%0A%0AI%20am%20interested%20in%20your%20services.%0A%0APlease%20share%20more%20details.%0A%0AThanks"
                   href="/contact"
                   className="text-secondary cursor-pointer items-center rounded-sm px-4 py-2 font-bold transition duration-100 ease-in-out hover:bg-indigo-600 hover:text-white"
                 >
@@ -178,7 +185,7 @@ const Header = () => {
             <MenuItem
               component="a"
               href="/contact"
-              // href="mailto:admin@libralytics.app?subject=Request%20Details&amp;body=Hi,%0A%0AI%20am%20interested%20in%20your%20services.%0A%0APlease%20share%20more%20details.%0A%0AThanks"
+              // href="mailto:libralytics.ext@gmail.com?subject=Request%20Details&amp;body=Hi,%0A%0AI%20am%20interested%20in%20your%20services.%0A%0APlease%20share%20more%20details.%0A%0AThanks"
             >
               <Typography
                 textAlign="center"

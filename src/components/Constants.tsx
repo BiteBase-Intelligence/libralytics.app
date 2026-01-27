@@ -1,10 +1,10 @@
 const Constants = {
-  name: 'Libralytics',
+  name: 'Libralytic',
   webname: 'libralytics',
   tld: '.app',
   mobile: '+66 1234567890',
   whatsapp: 'https://api.whatsapp.com/send/?phone=661234567890',
-  sales: 'mailto:sales@libralytics.app',
+  sales: 'mailto:libralytics.ext@gmail.com',
 };
 
 export default Constants;

@@ -15,6 +15,15 @@ module.exports = {
       '6xl': '4rem',
     },
     extend: {
+      colors: {
+        'silver-tree': '#96a6a5',
+        'morning-blue': '#8DA399',
+        'ebony-blue': '#1F2A38',
+        charcoal: '#36454F',
+        platinum: '#E5E4E2',
+        'slate-grey': '#708090',
+        'brand-primary': '#192638', // Mapping Primary to Ebony Blue/Dark
+      },
       animation: {
         text: 'text 5s ease infinite',
         blob: 'blob 7s infinite',

@@ -2,16 +2,22 @@ import i18n from 'i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import { initReactI18next } from 'react-i18next';
 
+import enAbout from '../locale/en/about.json';
 import enDashboard from '../locale/en/dashboard.json';
 import enDatasets from '../locale/en/datasets.json';
 import enHeader from '../locale/en/header.json';
 import enLanding from '../locale/en/landing.json';
 import enSignup from '../locale/en/signup.json';
+import enSolutions from '../locale/en/solutions.json';
+import enTechnology from '../locale/en/technology.json';
+import thAbout from '../locale/th/about.json';
 import thDashboard from '../locale/th/dashboard.json';
 import thDatasets from '../locale/th/datasets.json';
 import thHeader from '../locale/th/header.json';
 import thLanding from '../locale/th/landing.json';
 import thSignup from '../locale/th/signup.json';
+import thSolutions from '../locale/th/solutions.json';
+import thTechnology from '../locale/th/technology.json';
 
 i18n
   .use(LanguageDetector)
@@ -24,6 +30,9 @@ i18n
         datasets: enDatasets,
         signup: enSignup,
         dashboard: enDashboard,
+        about: enAbout,
+        solutions: enSolutions,
+        technology: enTechnology,
       },
       th: {
         header: thHeader,
@@ -31,6 +40,9 @@ i18n
         datasets: thDatasets,
         signup: thSignup,
         dashboard: thDashboard,
+        about: thAbout,
+        solutions: thSolutions,
+        technology: thTechnology,
       },
     },
     fallbackLng: 'en',

@@ -289,7 +289,7 @@ const Index = () => {
         >
           {t('partnerHeader')}
         </motion.h1>
-        <div className="grid h-full w-full grid-cols-1 grid-rows-3 items-center justify-center gap-4 pb-10 pt-2 sm:grid-cols-3 sm:grid-rows-1">
+        <div className="mx-auto grid h-full w-full max-w-6xl grid-cols-1 items-center justify-center gap-8 pb-10 pt-8 sm:grid-cols-2 lg:grid-cols-3">
           {JSON.parse(
             JSON.stringify(t('partners', { returnObjects: true }))
           ).map((partner: any) => (
@@ -299,6 +299,7 @@ const Index = () => {
               image={`/${partner.image}`}
               imgAlt={partner.value}
               link={partner.link}
+              desc={partner.desc}
             />
           ))}
         </div>

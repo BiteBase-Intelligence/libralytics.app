@@ -1,0 +1,37 @@
+{
+  "title": "เกี่ยวกับเรา",
+  "nameOriginTitle": "ที่มาของชื่อ",
+  "nameOriginSubtitle1": "Library + Analytics = Libralytics",
+  "nameOriginSubtitle2": "ห้องสมุดแห่งการวิเคราะห์ของคุณ",
+  "nameOriginDesc": "เช่นเดียวกับห้องสมุดที่เป็นศูนย์รวมความรู้ เราให้บริการโครงสร้างพื้นฐานที่คัดสรรมาเพื่อความต้องการด้านข้อมูลและการวิเคราะห์ของคุณ ขับเคลื่อนด้วย Agentic AI ที่ทันสมัย",
+  "missionTitle": "พันธกิจ",
+  "missionDesc": "เปลี่ยนข้อมูลที่กระจัดกระจายให้เป็นการตัดสินใจที่ชาญฉลาดด้วย Agentic AI",
+  "visionTitle": "วิสัยทัศน์",
+  "visionDesc": "เป็นผู้ให้บริการโครงสร้างพื้นฐานด้านข้อมูลและ AI ชั้นนำสำหรับองค์กรสมัยใหม่ในภูมิภาคเอเปค",
+  "leadershipTitle": "ทีมผู้บริหาร",
+  "leadershipDesc": "ขับเคลื่อนโดยผู้เชี่ยวชาญด้านข้อมูลและนวัตกรรม",
+  "team": [
+    {
+      "name": "Em Sakkarananthakorn Wijnants",
+      "role": "Founder & CEO",
+      "image": "/assets/em_profile.jpg",
+      "position": "center",
+      "linkedin": "https://th.linkedin.com/in/sakkarananthakorn-wijnants-964203186?",
+      "desc": "มีพื้นฐานด้านการตลาดที่ขับเคลื่อนด้วยข้อมูลและการใช้ข้อมูลเพื่อเพิ่มประสิทธิภาพองค์กร"
+    },
+    {
+      "name": "Nattawut Chainilphan",
+      "role": "CBO",
+      "image": "/assets/nattawut_profile.jpg",
+      "position": "center",
+      "desc": "มีประสบการณ์เป็นผู้บริหารระดับประเทศและที่ปรึกษาสตาร์ทอัพ ประสบความสำเร็จในการขยายตลาดระดับชาติ"
+    },
+    {
+      "name": "Angelina Wijnants",
+      "role": "CFO & HR",
+      "image": "/assets/angelina_profile.jpg",
+      "position": "right",
+      "desc": "มีประสบการณ์เป็นหัวหน้าฝ่ายกลยุทธ์และการดำเนินโครงการที่ True Ascend บริหารจัดการและรักษาความต่อเนื่องของแบรนด์ทั้งออนไลน์และออฟไลน์"
+    }
+  ]
+}

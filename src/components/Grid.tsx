@@ -73,17 +73,33 @@ export function GridImages(props: {
   image: any;
   imgAlt: string;
   link: string;
+  desc?: string;
 }) {
-  const { id, image, imgAlt, link } = props;
+  const { id, image, imgAlt, link, desc } = props;
   return (
-    <Link
+    <div
       key={id}
-      href={link}
-      target="_blank"
-      className="flex h-full w-full items-center justify-center border border-solid py-10"
+      className="flex h-full w-full flex-col items-center justify-start gap-3"
     >
-      <Image src={image} alt={imgAlt} height={200} width={250} />
-    </Link>
+      <Link
+        href={link}
+        target="_blank"
+        className="flex h-32 w-full items-center justify-center rounded-xl border border-white/20 bg-white/5 p-4 shadow-lg backdrop-blur-sm transition-all hover:scale-105 hover:bg-white/10 sm:h-40"
+      >
+        <Image
+          src={image}
+          alt={imgAlt}
+          height={80}
+          width={180}
+          className="max-h-[80px] w-auto object-contain opacity-90 transition-opacity hover:opacity-100"
+        />
+      </Link>
+      {desc && (
+        <p className="text-center text-xs font-light tracking-wide text-indigo-100/70 sm:text-sm">
+          {desc}
+        </p>
+      )}
+    </div>
   );
 }
 

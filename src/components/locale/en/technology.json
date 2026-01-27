@@ -1,0 +1,27 @@
+{
+  "title": "Technology & Infrastructure",
+  "subTitle": "Built on Google Cloud's secure infrastructure, utilizing robust data pipelines and advanced AI integration to ensure high availability and scalability.",
+  "dataSourcesTitle": "Diverse Data Collection",
+  "dataSourcesDesc": "We aggregate and normalize high-velocity data from a wide array of sectors—including Cuisine trends, Social Media sentiment, E-commerce transactions, and Demographic shifts—to provide a holistic market view.",
+  "pipelineTitle": "Data Mining & Pipeline",
+  "pipelineDesc": "Our end-to-end processing architecture ensures data integrity: Data Lake Ingestion (Raw) → Automated Cleansing & Normalization → AI Modeling & Enrichment → Actionable Reporting via Google Cloud.",
+  "stackTitle": "Our Tech Stack",
+  "stackItems": [
+    "Google Cloud Platform (GCP)",
+    "Data Lake / Lakehouse Architecture",
+    "Automated Data Cleansing",
+    "Real-time Dashboards"
+  ],
+  "agentDemo": {
+    "user": "User Request",
+    "userQuery": "Analyze Q3 market trends",
+    "agent": "Agentic Core (MCP)",
+    "step1": "Understanding Intent...",
+    "step2": "Routing to Data Tool...",
+    "tool": "MCP Server: Data Warehouse",
+    "toolAction": "Querying: SELECT * FROM market_data",
+    "step3": "Processing Results...",
+    "result": "Strategic Insight",
+    "resultText": "Market Volume: +15% YoY"
+  }
+}

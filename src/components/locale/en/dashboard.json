@@ -40,7 +40,7 @@
     "imageSrc": "/assets/images/grabfood.webp",
     "imageAlt": "Grab Food",
     "title": "Grab Food Dataset",
-    "description": "It consists of various data points, such as location, number of riders, heatmap, etc,. You can use this data to monitor talent movement or competitors, generate job market insights, and more.",
+    "description": "Gain granular visibility into the Grab Food ecosystem. Analyze delivery fleet density, demand heatmaps, and merchant distribution to benchmark performance and optimize your own logistics or investment strategy.",
     "pricing": "Available pricing:",
     "pricingDetails": "One-off purchase; Daily license; Monthly license; Quarterly license",
     "coverage": "Available coverage:",
@@ -48,14 +48,23 @@
     "record": "Recorded count:",
     "recordDetails": "2,000,000+",
     "history": "Historical Data:",
-    "historyDetails": "2023"
+    "historyDetails": "2023",
+    "schema": [
+      "Store Name",
+      "Cuisine Category",
+      "Rating",
+      "Review Count",
+      "Delivery Time",
+      "Promotions",
+      "Geo Coordinates"
+    ]
   },
   "shopeefood": {
     "name": "shopeefood",
     "imageSrc": "/assets/images/shopeefood.webp",
     "imageAlt": "ShopeeFood",
     "title": "ShopeeFood Dataset",
-    "description": "It consists of various data points, such as location, number of riders, heatmap, etc,. You can use this data to monitor talent movement or competitors, generate job market insights, and more.",
+    "description": "Unlock deep insights into ShopeeFood's market presence. Track order volume trends, rider availability, and geographical coverage to inform your market expansion and competitive positioning.",
     "pricing": "Available pricing:",
     "pricingDetails": "One-off purchase; Daily license; Monthly license; Quarterly license",
     "coverage": "Available coverage:",
@@ -63,14 +72,23 @@
     "record": "Recorded count:",
     "recordDetails": "1,500,000+",
     "history": "Historical Data:",
-    "historyDetails": "2023"
+    "historyDetails": "2023",
+    "schema": [
+      "Merchant Name",
+      "Food Type",
+      "Star Rating",
+      "Order Count",
+      "Voucher Info",
+      "Delivery Fee",
+      "Latitude/Longitude"
+    ]
   },
   "lineman": {
     "name": "lineman",
     "imageSrc": "/assets/images/lineman.webp",
     "imageAlt": "Lineman",
     "title": "Lineman Dataset",
-    "description": "It consists of various data points, such as location, number of riders, heatmap, etc,. You can use this data to monitor talent movement or competitors, generate job market insights, and more.",
+    "description": "Monitor Lineman's extensive delivery network in Thailand. Access real-time data on merchant activity and rider distribution to drive hyper-local operational efficiency.",
     "pricing": "Available pricing:",
     "pricingDetails": "One-off purchase; Daily license; Monthly license; Quarterly license",
     "coverage": "Available coverage:",
@@ -78,14 +96,22 @@
     "record": "Recorded count:",
     "recordDetails": "1,000,000+",
     "history": "Historical Data:",
-    "historyDetails": "2023"
+    "historyDetails": "2023",
+    "schema": [
+      "Restaurant Name",
+      "Open Status",
+      "User Reviews",
+      "Delivery Radius",
+      "Price Range",
+      "Location Detail"
+    ]
   },
   "wownow": {
     "name": "wownow",
     "imageSrc": "/assets/images/wownow.webp",
     "imageAlt": "Wownow",
     "title": "Wownow Dataset",
-    "description": "It consists of various data points, such as location, number of riders, heatmap, etc,. You can use this data to monitor talent movement or competitors, generate job market insights, and more.",
+    "description": "Explore the emerging digital economy in Cambodia through Wownow data. Understand consumer demand patterns and rapid delivery logistics in this high-growth market.",
     "pricing": "Available pricing:",
     "pricingDetails": "One-off purchase; Daily license; Monthly license; Quarterly license",
     "coverage": "Available coverage:",
@@ -93,14 +119,22 @@
     "record": "Recorded count:",
     "recordDetails": "1,000,000+",
     "history": "Historical Data:",
-    "historyDetails": "2023"
+    "historyDetails": "2023",
+    "schema": [
+      "Shop Name",
+      "Product Category",
+      "Discount Rate",
+      "Sales Volume",
+      "Delivery Estimation",
+      "City/Province"
+    ]
   },
   "foodpanda": {
     "name": "foodpanda",
     "imageSrc": "/assets/images/foodpanda_d.webp",
     "imageAlt": "foodpanda",
     "title": "foodpanda Dataset",
-    "description": "It consists of various data points, such as location, number of riders, heatmap, etc,. You can use this data to monitor talent movement or competitors, generate job market insights, and more.",
+    "description": "Access comprehensive data on foodpanda's operations across multiple Asian markets. Utilize cross-border insights on rider fleets and service reliability to fine-tune your regional strategy.",
     "pricing": "Available pricing:",
     "pricingDetails": "One-off purchase; Daily license; Monthly license; Quarterly license",
     "coverage": "Available coverage:",
@@ -108,6 +142,15 @@
     "record": "Recorded count:",
     "recordDetails": "1,000,000+",
     "history": "Historical Data:",
-    "historyDetails": "2023"
+    "historyDetails": "2023",
+    "schema": [
+      "Brand Name",
+      "Premium Partner",
+      "Min. Order Value",
+      "Customer Rating",
+      "Delivery Cost",
+      "Payment Methods",
+      "Geo Location"
+    ]
   }
 }
