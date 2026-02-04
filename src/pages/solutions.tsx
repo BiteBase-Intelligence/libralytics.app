@@ -55,7 +55,7 @@ const Solutions = () => {
           className="h-16 w-auto object-contain"
         />
       ),
-      link: 'https://libot-libralytic-co.vercel.app/',
+      link: 'https://libot-th.vercel.app/',
     },
   ];
 
