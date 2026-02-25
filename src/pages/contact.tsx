@@ -6,6 +6,8 @@ import Link from 'next/link';
 import * as React from 'react';
 import { useTranslation } from 'react-i18next';
 
+import TagManager from 'react-gtm-module';
+
 import Constants from '@/components/Constants';
 
 const messageMaxChar = 500;
@@ -138,9 +140,21 @@ const Contact = () => {
     validatePhone: '',
     validateMessage: '',
   });
-  const [isSubmitting, setIsSubmitting] = React.useState(false);
   const [submitted, setSubmitted] = React.useState(false);
   const [submittedName, setSubmittedName] = React.useState('');
+  const [utmParams, setUtmParams] = React.useState<any>({});
+
+  React.useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const utms = {
+      source: urlParams.get('utm_source'),
+      medium: urlParams.get('utm_medium'),
+      campaign: urlParams.get('utm_campaign'),
+      term: urlParams.get('utm_term'),
+      content: urlParams.get('utm_content'),
+    };
+    setUtmParams(utms);
+  }, []);
 
   const handleChange = (e: any) => {
     setFormData((prevFormData) => ({
@@ -174,6 +188,16 @@ const Contact = () => {
 
         // Set submitted name
         setSubmittedName(formData.name);
+
+        // Push event to GTM
+        TagManager.dataLayer({
+          dataLayer: {
+            event: 'contact_form_submit',
+            name: formData.name,
+            email: formData.email,
+            ...utmParams,
+          },
+        });
 
         // Reset form data after successful submission
         setFormData({

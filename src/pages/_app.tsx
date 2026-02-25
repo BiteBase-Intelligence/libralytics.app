@@ -9,7 +9,6 @@ import TagManager from 'react-gtm-module';
 import { I18nextProvider } from 'react-i18next';
 
 import i18n from '@/components/LanguageProvider/i18n';
-import SEOtags from '@/components/SEOtags';
 import { SeoConfig } from '@/utils/SeoConfig';
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -29,7 +28,6 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <DefaultSeo {...SeoConfig} />
-      <SEOtags />
       <I18nextProvider i18n={i18n}>
         <div className="flex h-screen w-screen flex-col">
           <main className="mb-auto" style={{ backgroundColor: '#F3F2FB' }}>

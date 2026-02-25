@@ -3,19 +3,16 @@ import { motion, useAnimation } from 'framer-motion';
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import * as React from 'react';
+import TagManager from 'react-gtm-module';
 import { useTranslation } from 'react-i18next';
 import { useInView } from 'react-intersection-observer';
 
 import ColoredButton, { UnColoredButton } from '@/components/Buttons';
 import Footer from '@/components/Footer';
-import {
-  GridCardWithIcon,
-  GridElement,
-  GridImages,
-  GridSteps,
-} from '@/components/Grid';
+import { GridCardWithIcon, GridElement, GridSteps } from '@/components/Grid';
 import Header from '@/components/Header';
 import Images from '@/components/Images';
+import InfographicAnimation from '@/components/InfographicAnimation';
 
 const Index = () => {
   const { t } = useTranslation();
@@ -152,11 +149,27 @@ const Index = () => {
               {t('landingSubHeader')}
             </motion.h3>
             <div className="mt-10 grid w-full grid-flow-row grid-cols-1 items-start justify-start gap-2 sm:w-10/12 sm:grid-cols-2 md:w-9/12 lg:w-8/12">
-              <ColoredButton text={t('landingButton1')} link="/contact" />
-              <UnColoredButton
-                text={t('landingButton2')}
-                link="https://libralytics-x.web.app/console/"
-              />
+              <div
+                onClick={() =>
+                  TagManager.dataLayer({
+                    dataLayer: { event: 'cta_click', label: 'Contact' },
+                  })
+                }
+              >
+                <ColoredButton text={t('landingButton1')} link="/contact" />
+              </div>
+              <div
+                onClick={() =>
+                  TagManager.dataLayer({
+                    dataLayer: { event: 'cta_click', label: 'Sample Data' },
+                  })
+                }
+              >
+                <UnColoredButton
+                  text={t('landingButton2')}
+                  link="https://libralytics-x.web.app/console/"
+                />
+              </div>
             </div>
           </div>
           {/* Right Col */}
@@ -279,32 +292,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Partners */}
-      <section className="bg-partners h-fit w-full px-6 sm:px-10">
-        <motion.h1
-          ref={sec4Top}
-          animate={animSec4Top}
-          transition={{ duration: 0.4, delay: 0 }}
-          className="mb-5 items-center pt-12 text-center text-xl font-bold leading-[1.3] text-white sm:text-3xl"
-        >
-          {t('partnerHeader')}
-        </motion.h1>
-        <div className="mx-auto grid h-full w-full max-w-6xl grid-cols-1 items-center justify-center gap-8 pb-10 pt-8 sm:grid-cols-2 lg:grid-cols-3">
-          {JSON.parse(
-            JSON.stringify(t('partners', { returnObjects: true }))
-          ).map((partner: any) => (
-            <GridImages
-              key={partner.key}
-              id={partner.key}
-              image={`/${partner.image}`}
-              imgAlt={partner.value}
-              link={partner.link}
-              desc={partner.desc}
-            />
-          ))}
-        </div>
-      </section>
-
       {/* Steps */}
       <section className="bg-steps h-fit w-full py-10">
         <motion.h1
@@ -337,13 +324,8 @@ const Index = () => {
       >
         <div className="grid h-fit w-full grid-flow-row px-6 sm:grid-cols-12 sm:px-0">
           {/* Mobile View - Image */}
-          <div className="flex items-center justify-center py-4 sm:hidden">
-            <Image
-              src={Images.dashboard}
-              alt="companies"
-              width="700"
-              height="458"
-            />
+          <div className="flex w-full items-center justify-center py-4 sm:hidden">
+            <InfographicAnimation />
           </div>
           {/* Left Col */}
           <div className="flex h-full w-full flex-col items-start justify-start sm:col-span-6">
@@ -363,7 +345,17 @@ const Index = () => {
               ))}
             </ul>
             <div className="flex h-fit w-full justify-center py-10 sm:justify-start">
-              <div className="w-1/2">
+              <div
+                className="w-1/2"
+                onClick={() =>
+                  TagManager.dataLayer({
+                    dataLayer: {
+                      event: 'cta_click',
+                      label: 'Sales Button Footer',
+                    },
+                  })
+                }
+              >
                 <ColoredButton
                   text={t('salesButton')}
                   link="https://libralytics-x.web.app/console/"
@@ -372,13 +364,8 @@ const Index = () => {
             </div>
           </div>
           {/* right col */}
-          <div className="text-primary hidden items-center justify-center pt-6 pl-10 sm:col-span-6 sm:flex sm:h-full sm:pt-0">
-            <Image
-              src={Images.dashboard}
-              alt="companies"
-              width="700"
-              height="458"
-            />
+          <div className="text-primary hidden w-full items-center justify-center pt-6 pl-10 sm:col-span-6 sm:flex sm:h-full sm:pt-0">
+            <InfographicAnimation />
           </div>
         </div>
       </section>

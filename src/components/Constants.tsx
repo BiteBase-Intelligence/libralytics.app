@@ -10,18 +10,18 @@ const Constants = {
 export default Constants;
 
 export const SEOs = {
-  website: `https://${Constants.webname}+${Constants.tld}`,
-  seoTitle: `${Constants.name} — Fresh restaurant & delivery intelligence data`,
-  seoDesciption: `With ${Constants.name}, get GrabFood, foodpanda, ShopeeFood, Lineman intelligence data, and more! Get your competitive advantage today!`,
+  website: `https://${Constants.webname}${Constants.tld}`,
+  seoTitle: `${Constants.name} — Restaurant & Food Delivery Intelligence`,
+  seoDesciption: `Libralytic provides intelligence data for GrabFood, foodpanda, ShopeeFood, and Lineman in Thailand. Get a competitive advantage with our data analytics and AI insights.`,
   seoKeywords:
-    'Data Scrape, artificial intelligence, API, Data Analytics, competitive intelligence, grabfood, foodpanda, shopeefood, robinhood, lineman, delivery rider, driver, revenue, logistics',
+    'restaurant intelligence, food delivery data, GrabFood analytics, foodpanda insights, ShopeeFood Thailand data, Lineman delivery data, competitive intelligence food delivery, data analytics thailand, Libralytic',
 };
 
 export const FAQs = [
   {
     i: 1,
     q: `What is ${Constants.name}?`,
-    a: `${Constants.name} is a AI chatbot service that opens new possibilities, generating images within seconds that bring your words to life.`,
+    a: `${Constants.name} provides restaurant and food delivery intelligence data. We help businesses gain competitive advantages by analyzing platform data from GrabFood, foodpanda, ShopeeFood, and Lineman.`,
   },
   {
     i: 2,
@@ -47,6 +47,6 @@ export const FAQs = [
   {
     i: 6,
     q: 'How to reach you?',
-    a: `You can send your queries to contact@${Constants.webname}.com to clear your doubts.`,
+    a: `You can send your queries to ${Constants.sales} to clear your doubts.`,
   },
 ];
