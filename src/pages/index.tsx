@@ -65,7 +65,7 @@ const Index = () => {
     threshold: 0.1,
   });
   const [sec3Top, sec3TopInView] = useInView({ triggerOnce: true });
-  const [sec4Top, sec4TopInView] = useInView({ triggerOnce: true });
+  const [, sec4TopInView] = useInView({ triggerOnce: true });
   const [sec5Top, sec5TopInView] = useInView({ triggerOnce: true });
   const animation = useAnimation();
   const animSec2Bot = useAnimation();

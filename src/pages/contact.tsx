@@ -4,9 +4,8 @@ import CircularProgress from '@mui/material/CircularProgress';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import * as React from 'react';
-import { useTranslation } from 'react-i18next';
-
 import TagManager from 'react-gtm-module';
+import { useTranslation } from 'react-i18next';
 
 import Constants from '@/components/Constants';
 
@@ -142,6 +141,7 @@ const Contact = () => {
   });
   const [submitted, setSubmitted] = React.useState(false);
   const [submittedName, setSubmittedName] = React.useState('');
+  const [isSubmitting, setIsSubmitting] = React.useState(false);
   const [utmParams, setUtmParams] = React.useState<any>({});
 
   React.useEffect(() => {
