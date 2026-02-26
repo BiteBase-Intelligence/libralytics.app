@@ -94,6 +94,18 @@ function sendTelegramRequest(clientDetails: any) {
   });
 }
 
+function sendEmailRequest(clientDetails: any) {
+  return fetch('/api/email', {
+    method: 'POST',
+    body: JSON.stringify({
+      email: clientDetails.email,
+      name: clientDetails.name,
+      phone: clientDetails.phone,
+      message: clientDetails.message,
+    }),
+  });
+}
+
 function checkResponse(response: any, serviceName: string) {
   if (!response.ok) {
     console.error(`${serviceName} request failed`);
@@ -116,6 +128,9 @@ async function saveClient(clientDetails: any, setFormData: Function) {
 
     requests.push(sendTelegramRequest(clientDetails));
     responseServices.push('Telegram');
+
+    requests.push(sendEmailRequest(clientDetails));
+    responseServices.push('Email');
 
     const responses = await Promise.all(requests);
     responses.forEach((response, index) => {
@@ -143,6 +158,32 @@ const Contact = () => {
   const [submittedName, setSubmittedName] = React.useState('');
   const [isSubmitting, setIsSubmitting] = React.useState(false);
   const [utmParams, setUtmParams] = React.useState<any>({});
+
+  const inquiryTemplates = [
+    {
+      label: 'API Request',
+      text: "I am interested in integrating Libralytic data into my platform. Specifically, I'm looking for API access to [Platform Name] data in [Region].",
+    },
+    {
+      label: 'Market Analysis',
+      text: "I require a custom market intelligence report for the [Industry] sector in [Location]. Specifically, I'm interested in...",
+    },
+    {
+      label: 'Lead Generation',
+      text: 'I want to leverage Agentic AI for automated lead generation. My target audience is...',
+    },
+    {
+      label: 'General Inquiry',
+      text: "I have a question regarding Libralytic's services and pricing. Could you please provide more information on...",
+    },
+  ];
+
+  const handleTemplateSelect = (templateText: string) => {
+    setFormData((prev) => ({
+      ...prev,
+      message: templateText,
+    }));
+  };
 
   React.useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
@@ -301,6 +342,22 @@ const Contact = () => {
                     onChange={handleChange}
                     value={formData.phone}
                   />
+                  <Box sx={{ mt: 2, mb: 1 }}>
+                    <p className="mb-2 text-sm font-medium text-gray-700">
+                      Select a Template:
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      {inquiryTemplates.map((template) => (
+                        <div
+                          key={template.label}
+                          onClick={() => handleTemplateSelect(template.text)}
+                          className="cursor-pointer rounded-full border border-indigo-200 bg-indigo-50 px-3 py-1 text-xs font-medium text-indigo-700 transition-colors hover:bg-indigo-100"
+                        >
+                          {template.label}
+                        </div>
+                      ))}
+                    </div>
+                  </Box>
                   <TextField
                     error={formData.validateMessage !== ''}
                     helperText={`max ${messageMaxChar} characters`}
@@ -309,7 +366,7 @@ const Contact = () => {
                     label="Message"
                     variant="outlined"
                     multiline
-                    rows={3}
+                    rows={4}
                     onChange={handleChange}
                     value={formData.message}
                   />
